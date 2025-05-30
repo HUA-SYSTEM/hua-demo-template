@@ -30,7 +30,7 @@ npm run dev
 
 ## 관련 프로젝트
 
-- [HUA SDK Lite (메인 SDK)](https://github.com/HUA-SYSTEM/hua-sdk-lite)
+- [HUA SDK Lite (메인 SDK)](https://github.com/HUA-Labs/hua-sdk-lite)
 
 ## 라이선스
 
