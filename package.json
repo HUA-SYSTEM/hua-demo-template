@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "hua-sdk-lite": "^1.4.4",
+    "hua-sdk-lite": "file:../hua-sdk-lite",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

@@ -11,9 +11,10 @@ const uiTextKo = {
   presetCustomDesc: 'presets.custom.json 파일을 프로젝트 루트에 두면 해당 key의 프리셋이 override/merge 됩니다.',
   example: '(예: gentle, companion, B1, playful 등)',
   sessionSuccess: (id: string) => `세션 생성 완료! (ID: ${id})`,
-  sessionFail: '세션 생성 실패: API 키 또는 네트워크를 확인하세요.',
+  sessionFail: '먼저 세션을 생성하세요!',
   msgFail: '메시지 전송 실패: API 키, 세션, 네트워크를 확인하세요.',
   needSession: '먼저 세션을 생성하세요!',
-  waiting: 'AI 응답 대기 중...'
+  waiting: 'AI 응답 대기 중...',
+  sendFail: 'AI 응답: 메시지 전송 실패: API 키, 세션, 네트워크를 확인하세요.'
 };
 export default uiTextKo; 

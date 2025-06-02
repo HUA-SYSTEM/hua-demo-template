@@ -67,6 +67,7 @@ function App() {
         tone: selectedTone,
         mode: selectedMode,
         tier: selectedTier,
+        lang,
       });
       setSessionId(session.id);
       setSessionStatus(`세션 생성 완료! (ID: ${session.id})`);
@@ -75,19 +76,27 @@ function App() {
     }
   };
 
+  React.useEffect(() => {
+    console.log('🔑 Loaded API Key:', import.meta.env.VITE_HUA_API_KEY);
+  }, []);
+
   const handleSendMessage = async () => {
     if (!sessionId) {
-      setAiReply('먼저 세션을 생성하세요!');
+      setAiReply(uiText[lang].sessionFail);
       return;
     }
+  
     setMsgLoading(true);
-    setAiReply('AI 응답 대기 중...');
+    setAiReply(uiText[lang].waiting);
+  
     try {
       const reply = await sendMessage(sessionId, msgInput);
       setAiReply(reply);
-    } catch {
-      setAiReply('메시지 전송 실패: API 키, 세션, 네트워크를 확인하세요.');
+    } catch (err) {
+      console.error('메시지 전송 실패:', err);
+      setAiReply(uiText[lang].sendFail);
     }
+  
     setMsgLoading(false);
   };
 

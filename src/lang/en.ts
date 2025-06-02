@@ -11,9 +11,10 @@ const uiTextEn = {
   presetCustomDesc: 'Place presets.custom.json in project root to override/merge keys.',
   example: '(e.g. gentle, companion, B1, playful)',
   sessionSuccess: (id: string) => `Session created! (ID: ${id})`,
-  sessionFail: 'Session creation failed: Check API key or network.',
+  sessionFail: 'Please create a session first!',
   msgFail: 'Message failed: Check API key, session, or network.',
   needSession: 'Create a session first!',
-  waiting: 'Waiting for AI reply...'
+  waiting: 'Waiting for AI reply...',
+  sendFail: 'AI Reply: Message send failed. Please check your API key, session, or network.'
 };
 export default uiTextEn; 
