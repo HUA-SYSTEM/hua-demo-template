@@ -16,7 +16,7 @@ npm install
 npm run dev
 ```
 
-- `.env` 또는 환경변수에 `HUA_API_KEY`를 설정해야 실제 API 연동이 가능합니다.
+- `.env` 또는 환경변수에 **VITE_HUA_API_KEY**를 설정해야 실제 API 연동이 가능합니다. (Vite 환경에서는 반드시 VITE_ 접두사 필요)
 
 ## 사용법
 
@@ -29,17 +29,13 @@ npm run dev
 - 모든 안내 메시지(응답 대기중, 에러 등)는 언어별 리소스(en/ko)에서 동적으로 불러옵니다.
 - 세션 생성 시 선택한 언어(lang)가 API로 전달되어, 서버가 지원할 경우 다국어 응답이 가능합니다.
 
-## 테스트/마스터 API 키
-
-- is_test=true로 발급된 API 키는 usage 제한 없이 무제한 호출이 가능합니다.
-
 ## 자동화 스크립트
 
 - `scripts/commit-push.bat` 실행 시 커밋 메시지 입력 → 자동 커밋/푸시
 
 ## 관련 프로젝트
 
-- [HUA SDK Lite (메인 SDK)](https://github.com/HUA-Labs/hua-sdk-lite)
+- [HUA SDK Lite (Main SDK)](https://github.com/HUA-Labs/hua-sdk-lite)
 
 ## 라이선스
 
